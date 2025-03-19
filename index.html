@@ -9,146 +9,142 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="logo">Portfolio</div>
-                <ul class="nav-list">
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#skills">Навыки</a></li>
-                    <li><a href="#projects">Проекты</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
+        <nav class="nav container">
+            <a href="#" class="logo">Portfolio</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Веб-разработчик</h1>
-                    <p>Создаю современные и адаптивные веб-сайты</p>
-                    <a href="#contact" class="btn">Связаться со мной</a>
-                </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title"></h1>
+                <p class="hero-subtitle animate-on-scroll">Создаю современные и отзывчивые веб-сайты</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>Обо мне</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Привет! Я начинающий веб-разработчик, специализирующийся на создании адаптивных веб-сайтов и email-рассылках. Мой подход к работе основан на внимании к деталям и стремлении к совершенству.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="animate-on-scroll">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <p>Я начинающий веб-разработчик, увлеченный созданием красивых и функциональных веб-сайтов. Мой путь в веб-разработке только начинается, и я стремлюсь к постоянному развитию и изучению новых технологий.</p>
+                </div>
+                <div class="about-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number">HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Проектов</span>
+                    <div class="stat-item">
+                        <span class="stat-number">CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Адаптивность</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Поддержка</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="60"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>Мои навыки</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML5</h3>
-                        <p>Семантическая верстка, доступность, SEO</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS3</h3>
-                        <p>Адаптивный дизайн, анимации, Flexbox/Grid</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Адаптивность</h3>
-                        <p>Mobile-first подход, кроссбраузерность</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email-верстка</h3>
-                        <p>Шаблоны для рассылок, Mailchimp</p>
-                    </div>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="animate-on-scroll">Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll">
+                    <i class="fas fa-code"></i>
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных и адаптивных веб-сайтов с использованием HTML5, CSS3 и JavaScript</p>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Разработка сайтов, которые отлично выглядят на всех устройствах</p>
+                </div>
+                <div class="skill-card animate-on-scroll">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Веб-дизайн</h3>
+                    <p>Создание привлекательных и удобных пользовательских интерфейсов</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>Мои проекты</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project1.svg" alt="Сайт-портфолио" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Личный сайт-портфолио</h3>
-                            <p>Адаптивный дизайн, современный интерфейс, форма обратной связи</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="animate-on-scroll">Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project1.svg" alt="Портфолио">
+                    </div>
+                    <div class="project-content">
+                        <h3>Личный сайт-портфолио</h3>
+                        <p>Адаптивный сайт-портфолио с современным дизайном и интерактивными элементами</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project2.svg" alt="Email-шаблон" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Email-шаблон</h3>
-                            <p>Адаптивный шаблон для email-рассылок, совместимость со всеми почтовыми клиентами</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>Mailchimp</span>
-                            </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project2.svg" alt="Email рассылки">
+                    </div>
+                    <div class="project-content">
+                        <h3>Email шаблоны</h3>
+                        <p>Адаптивные email шаблоны для рассылок с поддержкой всех почтовых клиентов</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Email верстка</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Связаться со мной</h2>
-                <div class="contact-content">
-                    <p class="contact-description">Оставьте свои контактные данные, и я свяжусь с вами в ближайшее время.</p>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Ваше имя</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Сообщение</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Отправить сообщение</button>
-                    </form>
-                </div>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="animate-on-scroll">Связаться со мной</h2>
+            <div class="contact-content animate-on-scroll">
+                <p class="contact-description">Оставьте свои контактные данные, и я свяжусь с вами в ближайшее время.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить сообщение</button>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -162,5 +158,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html> 
