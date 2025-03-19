@@ -1,36 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
-        </linearGradient>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;display=swap');
-        </style>
-    </defs>
-    <rect width="800" height="600" fill="url(#grad)"/>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Фон -->
+    <rect width="400" height="300" fill="#F3F4F6"/>
+    
+    <!-- Конверт -->
+    <path d="M100 80L200 150L300 80V220H100V80Z" fill="#FFFFFF" stroke="#2563EB" stroke-width="4"/>
+    <path d="M100 80L200 150L300 80" fill="none" stroke="#2563EB" stroke-width="4"/>
+    
+    <!-- Линии текста -->
+    <rect x="130" y="180" width="140" height="8" rx="2" fill="#93C5FD"/>
+    <rect x="130" y="195" width="100" height="8" rx="2" fill="#93C5FD"/>
     
     <!-- Декоративные элементы -->
-    <circle cx="150" cy="150" r="80" fill="rgba(255,255,255,0.1)"/>
-    <circle cx="650" cy="450" r="100" fill="rgba(255,255,255,0.1)"/>
-    
-    <!-- Иконка конверта -->
-    <g transform="translate(350,200)">
-        <!-- Конверт -->
-        <path d="M -70,-30 L 70,-30 L 70,30 L -70,30 Z" fill="white"/>
-        <path d="M -70,-30 L 0,0 L 70,-30" fill="none" stroke="white" stroke-width="5"/>
-        <!-- Линии письма -->
-        <rect x="-50" y="-10" width="100" height="5" rx="2" fill="#1d4ed8"/>
-        <rect x="-50" y="0" width="80" height="5" rx="2" fill="#1d4ed8"/>
-        <rect x="-50" y="10" width="60" height="5" rx="2" fill="#1d4ed8"/>
-    </g>
+    <circle cx="320" cy="100" r="30" fill="#DBEAFE"/>
+    <circle cx="80" cy="200" r="40" fill="#BFDBFE"/>
     
     <!-- Текст -->
-    <text x="400" y="400" font-family="Inter, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">
-        Email шаблон
-    </text>
-    <text x="400" y="450" font-family="Inter, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="middle">
-        Рассылки
-    </text>
+    <text x="150" y="160" font-family="Arial" font-size="14" fill="#1E40AF">Email шаблон</text>
+    <text x="150" y="175" font-family="Arial" font-size="12" fill="#6B7280">Рассылки</text>
 </svg> 
