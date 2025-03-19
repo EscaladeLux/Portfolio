@@ -327,7 +327,9 @@ body {
 }
 
 .contact-btn {
-    margin-top: 20px;
+    margin: 0;
+    min-width: 200px;
+    text-align: center;
 }
 
 .footer {
@@ -346,7 +348,7 @@ body {
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
 }
 
 .social-button {
