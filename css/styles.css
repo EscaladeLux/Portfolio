@@ -187,12 +187,38 @@ body {
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    overflow: hidden;
+    background: var(--section-bg);
 }
 
 .project-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Remove previous placeholder styles */
+.project-image::before {
+    display: none;
 }
 
 .project-content {
@@ -210,6 +236,23 @@ body {
     background: var(--section-bg);
     border-radius: 0.25rem;
     font-size: 0.875rem;
+}
+
+/* Optimize images for different screen sizes */
+@media (max-width: 768px) {
+    .project-image {
+        padding-top: 66.67%; /* 3:2 Aspect Ratio for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image {
+        padding-top: 56.25%; /* 16:9 Aspect Ratio for mobile */
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Contact section */

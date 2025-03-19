@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Помощник для скриншотов</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .frame-container {
+            margin-bottom: 40px;
+        }
+        .frame {
+            border: 2px solid #2563eb;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #2563eb;
+            text-align: center;
+        }
+        .size-info {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame-container">
+        <h2>Десктоп версия (project1.jpg)</h2>
+        <div class="size-info">1200x800 пикселей</div>
+        <iframe src="https://escaladelux.github.io/Portfolio/" width="1200" height="800" class="frame"></iframe>
+    </div>
+
+    <div class="frame-container">
+        <h2>Планшет версия (project1-tablet.jpg)</h2>
+        <div class="size-info">768x1024 пикселей</div>
+        <iframe src="https://escaladelux.github.io/Portfolio/" width="768" height="1024" class="frame"></iframe>
+    </div>
+
+    <div class="frame-container">
+        <h2>Мобильная версия (project1-mobile.jpg)</h2>
+        <div class="size-info">480x800 пикселей</div>
+        <iframe src="https://escaladelux.github.io/Portfolio/" width="480" height="800" class="frame"></iframe>
+    </div>
+
+    <script>
+        // Добавляем небольшую задержку для полной загрузки контента
+        window.onload = function() {
+            setTimeout(function() {
+                alert('Страница готова для создания скриншотов!\n\nИспользуйте инструмент для создания скриншотов вашей операционной системы:\n\nWindows: Win + Shift + S\nmacOS: Command + Shift + 4\n\nСделайте скриншот каждой версии и сохраните их с соответствующими именами.');
+            }, 2000);
+        };
+    </script>
+</body>
+</html> 
