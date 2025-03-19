@@ -57,4 +57,46 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
+});
+
+// Безопасное отображение контактов
+const contactLinks = {
+    whatsapp: '+7 (901) 745-45-90',
+    telegram: '@EscaladeLux',
+    email: 'garanrzorgeeru@mail.ru'
+};
+
+document.querySelectorAll('.contact-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const type = this.querySelector('i').classList.contains('fa-whatsapp') ? 'whatsapp' :
+                    this.querySelector('i').classList.contains('fa-telegram') ? 'telegram' :
+                    'email';
+        
+        const p = this.querySelector('p');
+        const currentText = p.textContent;
+        
+        if (currentText.includes('X')) {
+            p.textContent = `${type.charAt(0).toUpperCase() + type.slice(1)}: ${contactLinks[type]}`;
+            setTimeout(() => {
+                p.textContent = currentText;
+            }, 5000); // Скрыть через 5 секунд
+        }
+    });
+});
+
+// Обработка клика по социальным кнопкам в футере
+document.querySelectorAll('.social-links a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const type = this.classList.contains('whatsapp') ? 'whatsapp' : 'telegram';
+        const contact = contactLinks[type];
+        
+        if (confirm(`Показать контакт ${type}?`)) {
+            if (type === 'whatsapp') {
+                window.open(`https://wa.me/${contact.replace(/\D/g, '')}`, '_blank');
+            } else {
+                window.open(`https://t.me/${contact.replace('@', '')}`, '_blank');
+            }
+        }
+    });
 }); 
